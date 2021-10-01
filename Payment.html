@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="paymentsheet.css">
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    <title></title>
+  
+    <script type="text/javascript">
+
+        function openpayment() {
+                var win = window.open();
+                var r = win.confirm("Payment");
+                if (r == true) {
+                    win.close();
+                    window.alert("success");
+                }
+                else {
+                    win.close();
+                    alert("not confirmed");
+                }
+        }
+    </script>
+   
+</head>
+<body>
+  
+    <img src="paymentimage.gif" style="top:0px;left:0px;position:fixed;width:100%">
+    <div class="paymentpanel">
+  
+        <label style="position: absolute; height: 100px; top: 30px; left: 50px; width: 300px; color: darkblue; font-family: 'Bahnschrift SemiBold', Tahoma, Geneva, Verdana, sans-serif; font-size: xx-large">Payments</label>
+        <label style="position: absolute; height: 100px; top: 40px; left: 1050px; width: 300px; color: darkblue; font-family: 'Bahnschrift SemiBold', Tahoma, Geneva, Verdana, sans-serif; font-size: large"> Rupees</label>
+  
+        <div class="paymentpanelone">
+            <form>
+                <input id="r1" type="radio" name="paymentchoose" style="position:absolute;left:50px;top:50px">
+                <label class="paylabel" style="top:50px;left:80px">Cash on delivery</label>
+                <input id="r2" type="radio" name="paymentchoose" style="position: absolute; left: 50px; top: 100px">
+                <label class="paylabel" style="top:100px;left:80px">Debit/Credit cards</label>
+                <input id="r3" type="radio" name="paymentchoose" style="position: absolute; left: 50px; top: 150px">
+                <label class="paylabel" style="top:150px;left:80px">Upi Paymnets</label>
+            </form>
+            <button id="btnp" class="placeorder" onclick="openpayment()" name="Pay" >Pay</button>
+            <a href="" class="addpay"> Add Payment method</a>
+        </div>
+    </div>
+   
+</body>
+</html>

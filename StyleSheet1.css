@@ -1,0 +1,100 @@
+﻿body {
+
+}
+.topnav {
+    text-shadow:1px;
+   
+    background-color: white;
+   
+    overflow-x: hidden;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+border-top-left-radius:30px;
+border-bottom-right-radius:30px;
+border-top-right-radius:30px;
+border-bottom-left-radius:30px;
+border-width:20px;
+border-bottom:ridge;
+
+}
+
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+
+    }
+        .topnav a:hover {
+            background-color:white;
+            color: black;
+        }
+        .topnav a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+
+
+.loginpanel {
+    background-color: white;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    height: 400px;
+    width: 1150px;
+    border-bottom: ridge;
+}
+.loginlabel {
+    position:absolute;
+    top:50px;
+    left:550px;
+    color:black;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size:x-large;
+}
+.text {
+
+    text-shadow: 0.6px;
+    height: 30px;
+    width:220px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+   
+}
+.loginnav {
+
+    text-shadow: 1px;
+    height: 100px;
+ 
+
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-width: 150px;
+    border-bottom: ridge;
+    border-bottom-color:crimson;
+}
+.titledesign {
+ 
+    color:darkred;
+    font-family:cursive;
+    font-size:xx-large;
+    
+
+}
+.homepanel {
+   
+    
+    
+}

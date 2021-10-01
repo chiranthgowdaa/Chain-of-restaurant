@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="testing.css">
+
+    <script type="text/javascript">
+
+
+        function run1() {
+            j = 0;
+            for (i = 0; i < 2; i++) {
+
+                window.alert("hello" + j);
+
+                var v = document.createElement('button');
+                
+                v.style.height = "50px";
+                v.style.width = "1200px";
+                v.style.borderRadius = "50px";
+                v.style.backgroundColor = "green";
+
+
+
+                j++;
+                document.getElementById("demo").appendChild(v);
+            }
+
+        }
+        function run2() {
+            count = 1;
+            window.alert(count);
+        }
+
+   
+    </script>
+
+</head>
+<body>
+
+    <div id="demo">
+        <p>HUMAN</p>
+
+        <input type="button" onclick="run1()">RUN1
+        <input type="button" onclick="run2()">RUN2
+
+    </div>
+</body>
+</html>
